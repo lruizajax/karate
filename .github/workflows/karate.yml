@@ -22,7 +22,7 @@ jobs:
         cache: maven
 
     - name: Ejecutar pruebas de Karate
-      run: mvn test -Dtest=ObjectsRunner
+      run: mvn clean test -Dtest=com.store.api.TestRunner
 
     - name: Subir reporte de Karate (Opcional)
       if: always()
